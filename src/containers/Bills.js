@@ -9,7 +9,11 @@ export default class {
     this.store = store
     const buttonNewBill = document.querySelector(`button[data-testid="btn-new-bill"]`)
     /* istanbul ignore else */
+    const button = document.querySelector(`div[data-testid="icon-mail"]`)  
+    console.log(button);
     if (buttonNewBill) buttonNewBill.addEventListener('click', this.handleClickNewBill)
+    if (button) button.addEventListener('click', this.handleClickNewBill)
+
     const iconEye = document.querySelectorAll(`div[data-testid="icon-eye"]`)
     /* istanbul ignore else */
     if (iconEye) iconEye.forEach(icon => {

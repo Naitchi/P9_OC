@@ -13,9 +13,11 @@ export default (height) => {
         `
         <div class='vertical-navbar' style='height: ${height}vh;'>
           <div class='layout-title'> Billed </div>
-          <div id='layout-icon1' data-testid="icon-window">
-            ${WindowIcon}
-          </div>
+          <a href="/#employee/bills">
+            <div id='layout-icon1' data-testid="icon-window">
+              ${WindowIcon}
+            </div>  
+          </a>
           <div id='layout-icon2' data-testid="icon-mail">
             ${MailIcon}
           </div>
